@@ -1,0 +1,14 @@
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.sass-cache
+
+# System Files
+.DS_Store
+Thumbs.db

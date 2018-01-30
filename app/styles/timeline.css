@@ -1,0 +1,86 @@
+.lt-timeline-container {
+  margin: 15px 10px;
+  position: relative; }
+
+.lt-timeline-axis {
+  position: absolute; }
+  .lt-timeline-axis .tick text {
+    fill: #545454;
+    font-size: 13px; }
+  .lt-timeline-axis .tick line {
+    stroke: #e6e6e6; }
+  .lt-timeline-axis .domain {
+    stroke: #c9c9c9; }
+
+.lt-select-size {
+  height: 55px;
+  margin-left: 10px;
+  padding-left: 15px; }
+  .lt-select-size md-select {
+    margin: 0; }
+  .lt-select-size md-select-value {
+    min-width: 100px; }
+  .lt-select-size label {
+    border-left: 1px solid #c9c9c9;
+    padding-left: 30px;
+    margin: 0 10px; }
+
+.lt-timeline-chart {
+  position: absolute;
+  z-index: 10;
+  border: 1px solid #e6e6e6;
+  border-bottom: 1px solid #888; }
+  .lt-timeline-chart path, .lt-timeline-chart line, .lt-timeline-chart rect {
+    shape-rendering: crispEdges; }
+  .lt-timeline-chart .chart-category {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .lt-timeline-chart .chart-category:not(:last-of-type) {
+      border-bottom: 1px solid #aeaeae; }
+  .lt-timeline-chart .category-label {
+    padding: 5px;
+    font-size: 14px;
+    text-align: right;
+    color: #0277bd;
+    flex: none; }
+  .lt-timeline-chart .category-results {
+    padding: 10px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: none; }
+  .lt-timeline-chart .chart-launch {
+    font-size: 12px; }
+  .lt-timeline-chart .chart-launch-circle {
+    cursor: pointer; }
+  .lt-timeline-chart .chart-launch-label {
+    font-size: 12px; }
+  .lt-timeline-chart .chart-launch-hover {
+    font-size: 12px;
+    color: #c9c9c9; }
+    .lt-timeline-chart .chart-launch-hover svg {
+      stroke: #c9c9c9; }
+
+/* Timeline Header */
+.lt-timeline-header {
+  margin: 10px;
+  border: 1px solid #e6e6e6;
+  padding: 0 20px; }
+
+.lt-circle {
+  margin: 0 10px 0 20px;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px; }
+
+.bg-color-alpha {
+  background-color: #81D4FA; }
+
+.bg-color-beta {
+  background-color: #03A9F4; }
+
+.bg-color-launch {
+  background-color: #0277BD; }
+
+/*# sourceMappingURL=timeline.css.map */

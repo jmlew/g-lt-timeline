@@ -1,0 +1,41 @@
+<section class="md-padding">
+  <section class="lt-timeline-header"
+    layout="row" layout-align="space-between center">
+    <div layout="row" layout-align="start center">
+      <div layout="row" layout-align="start center">
+        <div class="lt-circle bg-color-alpha"></div>
+        <p class="md-body-1">Alpha</p>
+      </div>
+      <div layout="row" layout-align="start center">
+        <div class="lt-circle bg-color-beta"></div>
+        <p class="md-body-1">Beta</p>
+      </div>
+      <div layout="row" layout-align="start center">
+        <div class="lt-circle bg-color-launch"></div>
+        <p class="md-body-1">Launch</p>
+      </div>
+    </div>
+    <div layout="row" layout-align="end center">
+      <md-radio-group layout="row" layout-align="start center"
+        ng-model="$ctrl.currentCategory"
+        ng-change="$ctrl.onUpdateCategory()">
+        <md-radio-button ng-repeat="category in $ctrl.categoryOptions"
+          ng-value="category">
+          <label>{{::category.name}}</label>
+        </md-radio-button>
+      </md-radio-group>
+      <div class="lt-select-size" layout="row" layout-align="start center">
+        <label>Chart size:</label>
+        <md-select ng-model="$ctrl.currentChartSize" aria-label="select category"
+          md-on-close="$ctrl.onUpdateChartSize()">
+          <md-option ng-value="size"
+            ng-repeat="size in $ctrl.chartSizeOptions">{{size}}px</md-option>
+        </md-select>
+      </div>
+    </div>
+  </section>
+  <section class="lt-timeline-container">
+    <div class="lt-timeline-chart"></div>
+    <div class="lt-timeline-axis"></div>
+  </section>
+</section>
